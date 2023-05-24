@@ -1,0 +1,164 @@
+html, body {
+    width: 100vw;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: rgb(236, 236, 236);
+    font-family:"titillium_webregular", Arial, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 6vh 29vh 65vh;
+
+    width:100vw;
+    height:100vh;
+
+    background-color: rgb(0, 0, 0);
+}
+
+#profile_pic_div, #profile_content p, #center_content {
+    display: none;
+}
+
+nav {
+    grid-row:1/2;
+    grid-column: 1/3;
+    
+    display: flex;
+    width:100%;
+    align-items: center;
+    background-color: #1e1736;
+    box-shadow: 0px 1px 15px black;
+
+    overflow-y: hidden;
+
+    background-color: rgb(112, 0, 0);
+    z-index: 0;
+}
+
+nav li {
+    display: inline;
+    height: 100%;
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    padding:14px 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f2eecb;
+    background-color: rgb(112, 0, 0);
+    transition: all 300ms;
+}
+
+nav ul li a:hover {
+    background-color: rgb(102, 0, 0);
+    border-bottom: 1px solid antiquewhite;
+}
+
+#profile, #page_content {
+    height: 100%;
+    border: 1px solid rgb(30, 30, 30);
+    border-radius: 5px;
+
+    /* Possibly Temporary CSS */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+/* Profile CSS */
+#profile {
+    grid-row: 2/3;
+    grid-column: 1/3;
+
+    padding: 0;
+
+    color: white;
+    background-image: url("./backgroundimg.jpg");
+    background-size:auto;
+}
+
+#profile_content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    background-color: rgba(143, 27, 27, 0.6);
+
+    text-align: center;
+    align-items: center;
+}
+
+#profile_pic_div {
+    overflow: hidden;
+    position: relative;
+    top: calc(100%/4);
+
+    margin: auto;
+
+    border-radius: 10px;
+}
+
+#profile_pic {
+    display: block;
+    position: absolute;
+
+    width: 100px;
+    height: 170px;
+}
+
+#profile p {
+    position: relative;
+    top:calc(100%/4);
+}
+
+/* Main Content CSS */
+#page_content {
+    grid-row: 3/4;
+    grid-column: 1/3;
+
+    overflow-y: scroll;
+    
+    color: maroon;
+    background-color: white;
+}
+
+#center_content {
+    width: 70%;
+    margin: auto;
+}
+
+#page_content p {
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+
+/* Pre-set styles */
+.known_languages {
+    display: inline;
+    font-size: 10px;
+
+    padding: 5px 15px;
+    width: fit-content;
+
+    background-color: white;
+    border: 1px solid maroon;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #center_content {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #center_content {
+        width: 100%;
+    }
+}
