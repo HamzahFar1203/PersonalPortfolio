@@ -61,6 +61,12 @@ nav a:hover {
     /* border-bottom: 1px solid antiquewhite; */
 }
 
+.nav_selected {
+    color: #f2eecb;
+    border-bottom: 1px solid antiquewhite; 
+    background-color: #202e41;
+}
+
 #first-div, #page_content {
     /* Possibly Temporary CSS */
     padding-left: 10px;
