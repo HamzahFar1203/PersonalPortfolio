@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Personal Portfolio</title>
+        <title>Portfolio - Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script
             src="https://code.jquery.com/jquery-3.7.0.min.js"
             integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
             crossorigin="anonymous">
         </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
 
         <!-- Main Style Sheet -->
         <link type="text/css" rel="stylesheet" href="./files/index.css">
@@ -15,30 +18,23 @@
     <body>
         <!-- Central Data -->
         <main>
-            
+
             <!-- Navigation bar -->
-            <nav>
-                <ul style="display:inline; width:fit-content; margin:0; padding:0;">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                </ul>
+            <nav class="">
+                <a href="./index.html">Home</a>
+                <a href="#">Projects</a>
             </nav>
 
             <!-- Profile Section -->
-            <div id="profile">
-                <div id="profile_content">
-                    <div id="profile_pic_div">
-                        <img src="./files/PictureOfMe.jpg" id="profile_pic">
-                    </div>
-                    <p><span style="color: rgb(255, 1, 1);">@</span>HamzahFar1203</p>
-                </div>
+            <div id="first-div">
+                <p>Hi<br>I'm Hamzah<span style="color:#9DB2BF;">.</span></p>
             </div>
 
-            <!-- Users Feed Section -->
+            <!-- Page Content Section -->
             <div id="page_content">
                 <div id="center_content">
-                    <h2>About Me</h2>
-                    <hr style="border: 1px solid maroon;">
+                    <h2 style="padding-top: 20px;">About Me</h2>
+                    <hr style="border: 1px solid #222f42;">
                     <p>Welcome to my portfolio website. I've been passionate about programming since eight years ago,
                        when I learned I could do it too. I was introduced to my first lines of code, when I took my first
                        programming class, "Web Development". I took the class hoping to start an exciting journey in
@@ -56,18 +52,22 @@
                        <br>
                     </p>
 
-                    <h3>WHAT I KNOW</h3>
-                    <ul id="languages_list" style="padding-left: 0px;">
-                        <h4>Intermediate - Advanced</h4>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>GitHub</li>
+                    <h3 style="padding: 0; margin:0;">WHAT I KNOW</h3>
+                    <h4>Intermediate - Advanced</h4>
+                    <div class="languages_list" style="padding-left: 0px;">
+                        <p class="known_languages">HTML</p>
+                        <p class="known_languages">CSS</p>
+                        <p class="known_languages">JavaScript</p>
+                        <p class="known_languages">Python</p>
+                        <p class="known_languages">GitHub</p>
+                        <p class="known_languages">JQuery</p>
+                    </div>
                         
-                        <h4>Beginner</h4>
-                        <li>C++</li>
-                    </ul>
+                    <h4>Beginner</h4>
+                    <div class="languages_list" style="padding-left: 0px;">
+                        <p class="known_languages">C++</p>
+                        <p class="known_languages">NodeJS</p>
+                    </div>
                 </div>
             </div>
 
